@@ -25,6 +25,7 @@ public class UserService {
     public Optional<User> findOne (int id) {
 
         return userRepository.findById(id);
+        //return userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found"));
     }
 
     public void deleteUser (int id) {

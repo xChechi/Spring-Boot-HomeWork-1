@@ -34,7 +34,7 @@ public class User {
 
     @NotEmpty
     @JsonIgnore
-    @Column(name = "user_username", unique = true)
+    @Column(name = "user_password", unique = true)
     private String password;
 
 }
